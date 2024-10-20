@@ -9,7 +9,8 @@ First it scans for playlists that do not fit the naming expected naming standard
 
 Therafter it creates new playslists for all albums it finds.
 Naming convention it works after:
-		00 - Album Name (year).mp3
+  {Artist Name}/{Album Title} ({Release Year})/{track:00} - {Track Title}
+		                                00 - Album Name (year).mp3
 
 Why? Well this is how old school apps and apliances expect to get the media.
 
