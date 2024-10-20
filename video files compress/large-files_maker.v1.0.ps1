@@ -18,7 +18,7 @@ clear
 $scriptDirectory = Split-Path -Parent $MyInvocation.MyCommand.Path
 
 # Set the directory to search in
-$searchdir = "c:\your dir with videofiles"
+$searchdir = "x:\your dir with videofiles"
 
 # Set the size threshold in gigabytes
 $size = 2
