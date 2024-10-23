@@ -1,0 +1,9 @@
+<QueryList>
+  <Query Id="0" Path="Security">
+    <Select Path="Security">
+      *[System[(EventID=4688)]]
+      and
+      *[EventData[Data[@Name='NewProcessName'] and (Data='C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe')]]
+    </Select>
+  </Query>
+</QueryList>
