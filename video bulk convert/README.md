@@ -1,3 +1,4 @@
-The script´s purpose is to save space or change resoution of loads of media files bulk style.
+The script´s purpose is to save space or change resolution of loads of media files bulk style.
 
 Let it loose on a video collection and set the resolution, wanted bitrate and audio quality.
+The script supports GPU accelerated conversion, and falls back to CPU if needed.
