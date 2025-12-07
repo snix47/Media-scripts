@@ -3,7 +3,7 @@
 	v 2.6.1 	M4A to MP3 converter
 	--------------------------------
 	
-	The script bulk converts those pesky .m4a files to mp3 files.
+	The script bulk converts those pesky .m4a files to proper mp3 files.
 
     	Dependencies:
     	ffmpeg.exe   (full build 2025-10-30 or later) https://www.gyan.dev/ffmpeg/builds/
@@ -53,3 +53,4 @@ $EndTime = Get-Date
 $TotalTime = New-TimeSpan $StartTime $EndTime
 
 "Script execution time: " + $TotalTime.ToString('hh\:mm\:ss')
+
