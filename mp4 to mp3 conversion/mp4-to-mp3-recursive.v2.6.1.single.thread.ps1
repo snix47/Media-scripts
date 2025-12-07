@@ -1,17 +1,14 @@
 ﻿
 <#
 	v 2.6.1 	M4A to MP3 converter
-	----------------------------
+	--------------------------------
 	
 	The script bulk converts those pesky .m4a files to mp3 files.
 
     	Dependencies:
     	ffmpeg.exe   (full build 2025-10-30 or later) https://www.gyan.dev/ffmpeg/builds/
-    	ffprobe.exe  (full build 2025-10-30 or later) https://www.gyan.dev/ffmpeg/builds/
 
 	Required variables to set:
-    	$ffmpeg_path  - Full path to ffmpeg.exe
-    	$ffprobe_path - Full path to ffprobe.exe
     	$input_directory - Directory to scan for MP4 files
 
 #>
@@ -20,11 +17,9 @@
 $StartTime = Get-Date
 
 # Input directory
-$input_directory = "m:\mp3-old\!convert\"
+$input_directory = "c:\temp\mp4-files\"
 
 # Path to ffmpeg.exe
-# $ffmpeg_path = "m:\mp3-old\!script\ffmpeg.exe"
-
 $ffmpeg_path = Join-Path $PSScriptRoot "ffmpeg.exe"
 
 # Get all MP4 files in the input directory and its subdirectories
@@ -56,4 +51,5 @@ foreach ($file in $flac_files) {
 # End of script
 $EndTime = Get-Date
 $TotalTime = New-TimeSpan $StartTime $EndTime
+
 "Script execution time: " + $TotalTime.ToString('hh\:mm\:ss')
