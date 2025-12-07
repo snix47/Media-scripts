@@ -31,9 +31,9 @@ Clear Screen
 # --------------------------
 # User variables
 # --------------------------
-$ffmpeg_path   = "M:\mp3-old\_script\tube_compress\ffmpeg.exe"
-$ffprobe_path  = "M:\mp3-old\_script\tube_compress\ffprobe.exe"
-$input_dir     = "M:\youtube\"
+$ffmpeg_path   = "c:\temp\ffmpeg.exe"
+$ffprobe_path  = "c:\temp\ffprobe.exe"
+$input_dir     = "c:\temp\videofiles\"
 $resolution    = 720
 $audioquality  = "aac128"  # "aac128" or "org"
 $scriptver = "2.6"
@@ -268,3 +268,4 @@ foreach ($fileObj in $files) {
 
 Write-Host "`n🎉 All done! v$scriptver" -ForegroundColor Green
 Stop-Transcript
+
