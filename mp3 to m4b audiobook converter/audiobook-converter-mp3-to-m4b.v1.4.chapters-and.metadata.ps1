@@ -19,13 +19,13 @@ A SIMPLE tool to synch PC <-> iPhone media with is: 3uTools (https://www.3u.com)
 #>
 
 # Path to ffmpeg.exe
-$ffmpeg_path = "m:\mp3-old\!script\ffmpeg.exe"
+$ffmpeg_path = "c:\temp\ffmpeg.exe"
 
 # Automatically detect ffprobe in the same directory as ffmpeg
 $ffprobe_path = Join-Path (Split-Path $ffmpeg_path) "ffprobe.exe"
 
 # Input directory containing subfolders with MP3 files
-$input_directory = "m:\mp3-old\!convertebooks\"
+$input_directory = "c:\temp\mp3-audiobooks\"
 
 # Verify tools exist
 if (-not (Test-Path $ffmpeg_path)) {
@@ -130,3 +130,4 @@ Get-ChildItem -Path $input_directory -Directory | ForEach-Object {
         Write-Error "❌ Failed to create $outputFile"
     }
 }
+
